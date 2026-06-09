@@ -16,7 +16,6 @@ const toast = document.getElementById("toast");
 const quizQuestion = document.getElementById("quizQuestion");
 const quizOptions = document.getElementById("quizOptions");
 const achievementStatus = document.getElementById("achievementStatus");
-const qrPhoto = document.getElementById("qrPhoto");
 
 // PUBLICIDADE: os jogos abaixo aparecem no carrossel do banner.
 const ads = [
@@ -68,7 +67,7 @@ const quizQuestions = [
   },
   {
     question: "Qual botao voce usa para ganhar XP nos jogos?",
-    options: ["Jogar", "Qr Code", "Todos os jogos"],
+    options: ["Jogar", "Todos os jogos", "Regras"],
     answer: "Jogar",
     reward: 15
   },
@@ -85,9 +84,9 @@ const quizQuestions = [
     reward: 15
   },
   {
-    question: "O que o QR Code ajuda a acessar?",
-    options: ["O site", "A barra de XP", "A publicidade"],
-    answer: "O site",
+    question: "Qual barra indica que você está evoluindo no site?",
+    options: ["A barra de XP", "O Carrossel", "O Rodapé"],
+    answer: "A barra de XP",
     reward: 15
   },
   {
@@ -267,36 +266,8 @@ function handleQuizAnswer(selectedButton, selectedOption) {
   }, 1800);
 }
 
-function createQrCode() {
-  const qrContainer = document.getElementById("qrcode");
-  const pageUrl = window.location.href;
-
-  if (!qrContainer) {
-    return;
-  }
-
-  if (qrPhoto && qrPhoto.getAttribute("src")) {
-    qrPhoto.closest(".qr-frame")?.classList.add("has-qr-photo");
-    return;
-  }
-
-  if (!window.QRCode) {
-    qrContainer.textContent = pageUrl;
-    qrContainer.classList.add("qr-fallback");
-    return;
-  }
-
-  new QRCode(qrContainer, {
-    text: pageUrl,
-    width: 130,
-    height: 130,
-    colorDark: "#32020b",
-    colorLight: "#ffffff"
-  });
-}
-
+// Inicialização do sistema
 updateXpBar();
 setupGameXpButtons();
 startAdCarousel();
 renderQuiz();
-createQrCode();
