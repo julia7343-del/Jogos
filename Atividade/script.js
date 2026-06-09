@@ -52,47 +52,48 @@ const ads = [
 ];
 
 // QUIZ: cada pergunta aceita apenas uma resposta e o quiz nao reinicia.
+// Organizado do mais fácil ao mais difícil com posições de respostas embaralhadas.
 const quizQuestions = [
   {
-    question: "Quanto XP o jogo principal do Bob Esponja da?",
-    options: ["50 XP", "25 XP", "100 XP"],
-    answer: "50 XP",
-    reward: 15
-  },
-  {
     question: "Qual jogo tem sapinho no nome?",
-    options: ["Sapinho e Frutinhas", "Dinossauro", "Branca de Neve"],
+    options: ["Dinossauro", "Branca de Neve", "Sapinho e Frutinhas"],
     answer: "Sapinho e Frutinhas",
     reward: 15
   },
   {
     question: "Qual botao voce usa para ganhar XP nos jogos?",
-    options: ["Jogar", "Todos os jogos", "Regras"],
+    options: ["Jogar", "Regras", "Todos os jogos"],
     answer: "Jogar",
     reward: 15
   },
   {
+    question: "Qual barra indica que voce esta evoluindo no site?",
+    options: ["O Carrossel", "A barra de XP", "O Rodape"],
+    answer: "A barra de XP",
+    reward: 15
+  },
+  {
     question: "Quem criou o jogo principal do Bob Esponja?",
-    options: ["Julia de Almeida", "Guilherme Thenorio", "Eduardo Filipe"],
+    options: ["Guilherme Thenorio", "Eduardo Filipe", "Julia de Almeida"],
     answer: "Julia de Almeida",
     reward: 15
   },
   {
     question: "Qual jogo foi feito por Diego Vizari?",
-    options: ["Fantasia", "Branca de Neve", "Jogo da Giovanna"],
+    options: ["Netlands", "Fantasia", "Flappy Bird"],
     answer: "Fantasia",
     reward: 15
   },
   {
-    question: "Qual barra indica que você está evoluindo no site?",
-    options: ["A barra de XP", "O Carrossel", "O Rodapé"],
-    answer: "A barra de XP",
+    question: "Qual dos jogos abaixo NAO foi feito pela turma e NAO esta no site?",
+    options: ["Dinossauro", "Minecraft", "Sapinho e Frutinhas"],
+    answer: "Minecraft",
     reward: 15
   },
   {
-    question: "Qual jogo aparece na lista dos colegas?",
-    options: ["Dinossauro", "Pac-Man", "Tetris"],
-    answer: "Dinossauro",
+    question: "Quanto XP o jogo principal do Bob Esponja da?",
+    options: ["25 XP", "100 XP", "50 XP"],
+    answer: "50 XP",
     reward: 15
   }
 ];
