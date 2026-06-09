@@ -29,7 +29,6 @@
 
   <div class="page-shell">
     <main>
-      <!-- PUBLICIDADE: carrossel separado da secao do Bob Esponja. -->
       <section id="adBanner" class="ad-banner" aria-live="polite">
         <div id="adSlides" class="ad-slides" aria-hidden="true"></div>
         <div class="ad-overlay">
@@ -40,21 +39,19 @@
         <div id="adDots" class="ad-dots" aria-label="Indicadores da publicidade"></div>
       </section>
 
-      <!-- BOB ESPONJA: metade esquerda com o jogo, metade direita com o quiz. -->
       <section class="hero-game">
         <div class="bob-column">
           <div class="hero-copy">
             <p class="section-kicker">Jogo principal</p>
             <h2>Bob Esponja</h2>
             <p>By Julia de Almeida</p>
-            <a class="play-link" href="https://spiffy-rugelach-0f95c1.netlify.app/" data-xp="50" data-game="Bob Esponja">
+            <a class="play-link" href="https://spiffy-rugelach-0f95c1.netlify.app/" target="_blank" rel="noopener noreferrer" data-xp="50" data-game="Bob Esponja">
               Jogar agora
               <span>+50 XP</span>
             </a>
           </div>
         </div>
 
-        <!-- PAINEL DIREITO: elemento normal da pagina, sem fixed ou sticky. -->
         <aside class="side-panel" aria-label="Painel interativo de XP">
           <div class="panel-header">
             <p class="section-kicker">Desafio rapido</p>
@@ -117,20 +114,14 @@
 
   <footer>
     <div>
-      <p class="section-kicker">Acesse o site</p>
-      <h2>Qr Code</h2>
-      <p>Escaneie o Qr Code e acesse o site!</p>
-    </div>
-    <div class="qr-frame">
-      <!-- ADICIONE A FOTO DO QR CODE AQUI: coloque o nome/caminho da imagem dentro do src abaixo. Exemplo: src="imagens/qrcode.png" -->
-      <img src="" id="qrPhoto" class="qr-photo" alt="Imagem para acessar o site">
-      <div id="qrcode" aria-label="QR Code da URL atual"></div>
+      <p class="section-kicker">Ju Games</p>
+      <h2>Divirta-se!</h2>
+      <p>Explore os jogos desenvolvidos pela nossa turma e suba de nível.</p>
     </div>
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
